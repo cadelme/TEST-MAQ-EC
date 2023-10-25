@@ -1,0 +1,97 @@
+@use './base';
+
+body {
+    background-color: base.$background-page;
+    padding: 7.06rem;
+}
+
+.container {
+    display: flex;
+    border: 1px solid #000;
+    justify-content: space-between;
+
+
+}
+
+.sections {
+    max-width: 75%;
+
+    .section {
+        background-color: base.$background-section;
+        padding: 1rem;
+        display: flex;
+        max-width: 80%;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5rem;
+        margin-bottom: 3.38rem;
+        border-radius: 0.25rem;
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .section {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.section_paragraph {
+    max-width: 65%;
+}
+
+.sections_img {
+    img {
+        max-height: 37.5rem;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.05rem dashed #000;
+
+    ul.truncate-ellipsis {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        white-space: nowrap;
+
+        >* {
+            display: table-cell;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        padding-left: 1rem;
+
+        li {
+            &::marker {
+                content: '\25A0';
+                font-size: 2em;
+                color: red;
+                margin-bottom: -0.3em;
+            }
+
+            span {
+                @include base.fontHeader;
+
+            }
+
+            &::marker {
+                margin-bottom: -0.3em;
+                content: '\25A0';
+            }
+        }
+    }
+
+    .label {
+        @include base.label;
+    }
+}
+
+.text_paragraph {
+    @include base.fontParagraph;
+}

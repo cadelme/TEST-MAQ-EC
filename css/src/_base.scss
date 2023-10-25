@@ -1,0 +1,58 @@
+//Variables
+
+$background-page: #C9C5C5;
+$background-section: #FFF;
+$background-label: #E4E4E4;
+
+$fontRoboto: 'Roboto', sans-serif;
+$fontColorPrimary: #121212;
+$fontColorSecundary: #828282;
+
+
+//Elements
+
+figure {
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 100%;
+    }
+}
+
+@mixin label {
+    font-family: $fontRoboto;
+    padding: 0.5rem;
+    background-color: $background-label;
+    height: fit-content;
+    font-size: 0.9375rem;
+    border-radius: 0.0625rem;
+    color: $fontColorSecundary;
+}
+
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@mixin fontHeader {
+    font-family: $fontRoboto;
+    color: $fontColorPrimary;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+@mixin fontParagraph {
+    font-family: $fontRoboto;
+    color: $fontColorPrimary;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+}

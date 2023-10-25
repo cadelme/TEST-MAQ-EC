@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+figure {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+figure img {
+  width: 100%;
+}
+
+body {
+  background-color: #C9C5C5;
+  padding: 7.06rem;
+}
+
+.container {
+  display: flex;
+  border: 1px solid #000;
+  justify-content: space-between;
+}
+
+.sections {
+  max-width: 75%;
+}
+.sections .section {
+  background-color: #FFF;
+  padding: 1rem;
+  display: flex;
+  max-width: 80%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 3.38rem;
+  border-radius: 0.25rem;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.sections .section:last-child {
+  margin-bottom: 0;
+}
+
+.section_paragraph {
+  max-width: 65%;
+}
+
+.sections_img img {
+  max-height: 37.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.05rem dashed #000;
+}
+.header ul.truncate-ellipsis {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+  padding-left: 1rem;
+}
+.header ul.truncate-ellipsis > * {
+  display: table-cell;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.header ul.truncate-ellipsis li::marker {
+  content: "■";
+  font-size: 2em;
+  color: red;
+  margin-bottom: -0.3em;
+}
+.header ul.truncate-ellipsis li span {
+  font-family: "Roboto", sans-serif;
+  color: #121212;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.header ul.truncate-ellipsis li::marker {
+  margin-bottom: -0.3em;
+  content: "■";
+}
+.header .label {
+  font-family: "Roboto", sans-serif;
+  padding: 0.5rem;
+  background-color: #E4E4E4;
+  height: fit-content;
+  font-size: 0.9375rem;
+  border-radius: 0.0625rem;
+  color: #828282;
+}
+
+.text_paragraph {
+  font-family: "Roboto", sans-serif;
+  color: #121212;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
