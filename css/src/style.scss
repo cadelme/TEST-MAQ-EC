@@ -2,22 +2,18 @@
 
 body {
     background-color: base.$background-page;
-
 }
 
 .container {
     display: flex;
     justify-content: space-between;
     padding: 5%;
-
-
 }
 
 .sections {
     max-width: 60%;
 
     .section {
-
         @include base.section;
         max-width: 85%;
     }
